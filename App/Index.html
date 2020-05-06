@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ISIFood</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="images/hello-icon-152.png">
+	<meta name="theme-color" content="white" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Hello World">
+	<meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.botao button {
+			width: 60px;
+		}
+
+		.botao form button {
+			width: 60px;
+		}
+
+		.botao form {
+			display: inline;
+		}
+
+		.ff {
+			overflow: auto;
+			border-collapse: collapse;
+
+		}
+
+		.ff th {
+			background: #669900;
+			color: white;
+			font-weight: bold;
+		}
+
+		.ff td,
+		th {
+			padding: 6px;
+			border: 1px solid #ccc;
+			text-align: left;
+		}
+
+		.loader {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url('./images/logoISI.png') 50% 50% no-repeat rgb(249, 249, 249);
+		}
+	</style>
+	<link rel="manifest" href="/manifest.json">
+</head>
+
+<body class="goto-here fullscreen">
+	<div class="py-1 bg-primary">
+		<div class="container">
+			<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+				<div class="col-lg-12 d-block">
+					<div class="row d-flex">
+
+						<div class="col-md pr-4 d-flex topper align-items-center">
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" style="color:#669900">ISI Food</a>
+		</div>
+
+	</nav>
+	<!-- END nav -->
+
+	<div class="loader"></div>
+	<!--imagem loader-->
+
+	<section class="ftco-section ftco-cart">
+		<center>
+			<h1 class="mb-0 bread" style="color:black; text-align: center;">Encomendas</h1>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 ftco-animate">
+						<table class="ff" id="encomendas">
+							<thead class="thead-primary">
+								<tr class="text-center">
+									<th>Decisão</th>
+									<th>Nome</th>
+									<th>Morada</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="botao">
+									<td>
+										<form method="get" href="Viagem.html">
+											<!--enviar para a pagina especidfica da viagem-->
+											<button type="submit">Aceitar</button>
+										</form>
+
+										<button onclick="deleteRow(this)">Recusar</button>
+										<!-- botao de apagar linha -->
+									</td>
+
+									<td> <b>Pedro Henriques</b> </td>
+
+									<td class="product-name">
+										<p>rua nnnn numero 13 localidade</p>
+									</td>
+
+								</tr>
+								<!-- END TR-->
+
+								<tr class="botao">
+									<td>
+										<form method="get" action="/page2">
+											<button type="submit">Aceitar</button>
+										</form>
+
+										<button onclick="deleteRow(this)">Recusar</button>
+									</td>
+
+									<td> <b>Pedro Henriques</b> </td>
+
+									<td class="product-name">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</td>
+
+								</tr>
+								<!-- END TR-->
+
+								<tr class="botao">
+									<td>
+										<form method="get" action="/page2">
+											<button type="submit">Aceitar</button>
+										</form>
+
+										<button onclick="deleteRow(this)">Recusar</button>
+									</td>
+
+									<td><b>Pedro Henriques</b></td>
+
+									<td class="product-name">
+										<p>Far far away, behind the word mountains, far from the countries</p>
+									</td>
+
+								</tr>
+								<!-- END TR-->
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</center>
+	</section>
+
+
+
+	<!-- loader da pagina -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<!-- loader da pagina-->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+	</script>
+
+	<!-- remove a linha da tabela caso o pedido seja recusado-->
+
+	<script>
+		function deleteRow(elem) {
+			var table = elem.parentNode.parentNode.parentNode;
+			var rowCount = table.rows.length;
+
+			if (rowCount === 1) {
+				alert('Não podes apagar as linhas todas');
+				return;
+			}
+
+			var row = elem.parentNode.parentNode;
+			row.parentNode.removeChild(row); // remove a linha 
+		}
+	</script>
+	</div>
+	<script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
